@@ -16,10 +16,11 @@ import java.util.Map;
 import java.util.Objects;
 
 @RestController
+@RequestMapping("EaseMyTrip")
 public class AirportController {
 
-    @Autowired
-    AirportService airportService;
+
+    AirportService airportService=new AirportService();
     @PostMapping("/add_airport")
     public String addAirport(@RequestBody Airport airport){
 
